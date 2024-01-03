@@ -1,24 +1,13 @@
-#include <stdio.h>
+#!/usr/bin/python3
+for i in range(97, 123):
+    if i in [101, 113]:
+        continue
+    print(chr(i), end="")
 
-/**
- * main - nil to declare
- * @void - nil
- *
- * Description: c program for alpha
- * Return: nil if successful
- */
-int main(void)
-{
-	char alphabet;
+# VERSION2
+# for i in range(97, 123)
+#    print("{:c}", end="")
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-	{
-		putchar(alphabet);
-	}
-	for (alphabet = 'A'; alphabet <= 'Z'; alphabet++)
-	{
-		putchar(alphabet);
-	}
-	putchar('\n');
-	return (0);
-}
+# VERSION3
+# import string
+# print(string.lower_case[::], end="")
