@@ -2,7 +2,7 @@
 for i in range(97, 123):
     if i in [101, 113]:
         continue
-    print(chr(i), end="")
+    print("{:c}".format(i), end="")
 
 # VERSION2
 # for i in range(97, 123)
