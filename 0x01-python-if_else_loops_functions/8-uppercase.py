@@ -1,25 +1,7 @@
-#include <stdio.h>
-
-/**
- * main - nil to declare
- * @void - nil
- *
- * Description: c program for alpha
- * Return: nil if successful
- */
-int main(void)
-{
-	int hexa;
-	int dexa;
-
-	for (hexa = '0'; hexa <= '9'; hexa++)
-	{
-		putchar(hexa);
-	}
-	for (dexa = 'a'; dexa < 'g'; dexa++)
-	{
-		putchar(dexa);
-	}
-	putchar('\n');
-	return (0);
-}
+#!/usr/bin/python3
+def uppercase(str):
+    for i in str:
+        if not ord('a') <= ord(i) <= ord('z'):
+            print(i, end="")
+        else:
+            print(chr(ord(i) - 32), end="")
