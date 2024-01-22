@@ -8,7 +8,8 @@ def safe_print_list(my_list=[], x=0):
             j = j + 1
         for _ in my_list[:x]:
             k = k + 1
-            print(_, end="\n")
+            print(_, end="")
+        print("\t")
         if k <= j:
             return k
     except ValueError:
